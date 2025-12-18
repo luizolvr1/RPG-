@@ -1,0 +1,565 @@
+#include <stdio.h>
+#include <locale.h>
+
+
+	int main (){
+		char nome[20];
+			int decisao;
+	
+	// criação de sistema de pontuação
+	int pontos = 0;
+
+
+	printf("\n");
+	printf("===== REGRAS ===== \n");
+	printf("Nao use espaco para criar seu nome.\n");
+	printf("ex: Oliveira 777\n");
+	printf("\n digite seu nome:");
+	scanf("%s",nome);
+	printf("\n Bem vindo a G?tham:%s \n",nome);
+	printf("\n Voce sabe quem eu sou ? \n");
+	printf("\n 1 - Sim \n");
+	printf("\n 2 - Nao \n");
+	printf("\n Resposta:");
+	scanf("%d",&decisao);
+	
+	
+
+	switch (decisao) {
+	
+	case 1:
+		printf("\n voce: Sim eu Sei\n");
+			break;
+		case 2: 
+		printf("\n Voce: Nao, quem é voce?\n");
+		break;
+		default:
+			printf("Opcao invalida! \n");
+			break;
+			return 0;
+
+}
+if (decisao == 1) {
+	printf("\n ??? :nao adianta mentir, eu sei que vc nao eh tao inteligente para saber...\n");
+}
+	else if (decisao == 2){
+		printf("\n ??? : logo logo vc vai descobrir!!!\n");
+	}
+	 
+	 // missão de Charadas ??? 
+	 
+	 printf("\n 1 - Entao vamos comecar...\n");
+	 printf("\n ||| Para responder digite apenas uma das opcoes entre 1, 2 e 3 |||\n");
+	 printf("\n Tenho dois nomes mas so uma mente.\n");
+	 printf("Um deles e Edward, o outro… uma mentira brilhante.\n");
+	 printf("Se quer me vencer, descubra! Quem eu sou quando ninguem esta olhando? \n");
+	 printf("\n 1 - Um homem comum\n");
+	 printf("\n 2 - Nygma\n");
+	 printf("\n 3 - Um espelho quebrado\n");
+	 printf("\n Resposta:\n");
+		scanf("%d",&decisao);
+		
+	
+		
+		switch (decisao){
+			case 1:
+				printf("ERROU feio!\n");
+				break;
+				case 2:
+					printf("Acertou!\n");
+					break;
+					case 3:
+						printf("Voce nao tem um pingo de inteligencia!\n");
+						break;
+					}
+					
+					// adicionar pontos
+		if (decisao == 1){
+		printf("\nVoce Perdeu: 5 pontos\n");
+			pontos-=5;
+		}
+		else if (decisao == 2){
+			
+		printf("\nVoce ganhou: 10 pontos\n");
+		pontos+=10;
+		}
+		else if (decisao == 3){
+			printf("\nvoce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		printf("\nPontuacao total:\n%d", pontos);
+			// amostrar pontuação;
+		
+		
+printf("\n 2 - Voce me procura na luz, mas so me encontra na escuridao.");
+printf("Edward tenta me enterrar...Mas sempre retorno para atormenta-lo. O que eu sou?");
+	 
+						printf("\n 1 - A verdade\n");
+	 					printf("\n 2 - A sombra\n");
+						printf("\n 3 - A culpa\n");
+	 					printf("\nResposta:");
+						scanf("%d",&decisao);
+	
+
+		switch (decisao){
+			case 1:
+				printf("\n Acertou,Parabens! Ate que vc pensa um pouco!\n");
+				break;
+				case 2:
+					printf("\nErrou!\n");
+					break;
+					case 3:
+						printf("\n Essa definitivamente nao eh a resposta! \n");
+						break;
+		}
+		// adicionar pontos
+		if (decisao == 1){
+		printf("\n Voce ganhou: 10 pontos\n");
+		pontos+=10;
+		}
+		else if (decisao == 2){
+			
+			printf("\n voce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		else if (decisao == 3){
+			printf("\n voce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		printf("\n Pontuacao total:\n %d", pontos);
+			// amostrar pontuação;
+		
+		printf("\n 3 - Qual numero sempre persegue Edward Nygma? Ele aparece em sua assinatura, nas suas pistas e, ate no modo como pensa.\n");
+	 
+						printf("\n 1 - 6 \n");
+	 					printf("\n 2 - 9\n");
+						printf("\n 3 - 3 \n");
+	 					printf("\nResposta:");
+						scanf("\n %d",&decisao);
+	
+
+		switch (decisao){
+			case 1:
+				printf("\n Negativo\n");
+				break;
+				case 2:
+					printf("\n Errou!\n");
+					break;
+					case 3:
+						printf("\n Voce acertou esta indo bem! \n");
+						break;
+		}	
+		// adicionar pontos
+		if (decisao == 1){
+			printf("\n Voce perdeu: 5 pontos \n");
+				pontos-=5;
+		}
+		else if (decisao == 2){
+			
+			printf("\n Voce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		else if (decisao == 3){
+			printf("\n Voce ganhou: 10 pontos\n");
+		pontos+=10;
+		}
+		printf("\n Pontuacao total:\n %d", pontos);
+			// amostrar pontuação;
+		printf("\n 4 - Na multidao, sou invisivel. No silencio, sou ensurdecedor. Na mente de Edward, eu nunca descanso. O que sou? \n");
+	 
+						printf("\n 1 - A paranoia \n");
+	 					printf("\n 2 - O medo\n");
+						printf("\n 3 - O enigma  \n");
+	 					printf("\nResposta:");
+						scanf("\n %d",&decisao);
+	
+
+		switch (decisao){
+			case 1:
+				printf("\n Errou! \n");
+				break;
+				case 2:
+					printf("\n Parabens voce esta...errado !\n");
+					break;
+					case 3:
+						printf("\n Voce acertou, boa!\n");
+						break;
+		}	
+			// adicionar pontos
+		if (decisao == 1){
+			printf("\nVoce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		else if (decisao == 2){
+			
+			printf("\nVoce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		else if (decisao == 3){
+			printf("\nVoce ganhou: 10 pontos\n");
+		pontos+=10;
+		}
+		printf("\nPontuacao total:\n%d", pontos);
+			// amostrar pontuação;
+		
+		
+		printf("\n 5 - Comeca com E, termina com A, carrega um segredo, uma ferida, e uma obsessao que nunca sera curada. Quem e? \n");
+	 
+						printf("\n 1 - Enigma \n");
+	 					printf("\n 2 - Escuridao\n");
+						printf("\n 3 - Experiencia  \n");
+	 					printf("\nResposta:");
+						scanf("\n%d",&decisao);
+	
+
+		switch (decisao){
+			case 1:
+				printf("\n Voce acertou, boa! \n");
+				break;
+				case 2:
+					printf("\n Parabens vc esta...errado !\n");
+					break;
+					case 3:
+						printf("\n Errado! \n");
+						break;
+	}
+		// adicionar pontos
+		if (decisao == 1){
+			printf("\nVoce ganhou: 10 pontos\n");
+		pontos+=10;
+		}
+		else if (decisao == 2){
+			
+			printf("\nVoce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		else if (decisao == 3){
+			printf("\nVoce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		printf("\n Pontuacao total:\n %d", pontos);
+			// amostrar pontuação;
+	
+		printf("\n 6 -  Edward diz que e livre...Mas vive preso no unico lugar de onde jamais escapara. Onde ele esta?\n");
+	 
+						printf("\n 1 - A propria mente\n");
+	 					printf("\n 2 - Suas charadas\n");
+						printf("\n 3 - Gotham \n");
+	 					printf("\nResposta:");
+						scanf("\n%d",&decisao);
+	
+
+		switch (decisao){
+			case 1:
+				printf("\n Voce acertou, boa! \n");
+				break;
+				case 2:
+					printf("\n Parabens voce esta...errado !\n");
+					break;
+					case 3:
+						printf("\n Errado! \n");
+						break;
+	}
+		// adicionar pontos
+		if (decisao == 1){
+			printf("\nVoce ganhou: 10 pontos\n");
+		pontos+=10;
+		}
+		else if (decisao == 2){
+			
+			printf("\nVoce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		else if (decisao == 3){
+			printf("\nVoce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		printf("\nPontuacao total:\n%d", pontos);
+			// amostrar pontuação;
+		
+		printf("\n 7 - Eu existo em todas as mentes, mas ninguem me ve chegar.");
+		printf(" Cresco no silencio, corro quando e tarde demais. Quem sou?\n");
+	 
+						printf("\n 1 - A Culpa\n");
+	 					printf("\n 2 - O Medo\n");
+						printf("\n 3 - A Loucura \n");
+	 					printf("\nResposta:");
+						scanf("\n%d",&decisao);
+	
+
+		switch (decisao){
+			case 1:
+				printf("\n Nao, nao, nao, esta errado! \n");
+				break;
+				case 2:
+					printf("\n Voce acertou, boa !\n");
+					break;
+					case 3:
+						printf("\n Parabens vc esta...errado !\n");
+						break;
+	}
+			// adicionar pontos
+		if (decisao == 1){
+				printf("\n Voce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		else if (decisao == 2){
+			
+			printf("\n Voce ganhou: 10 pontos\n");
+		pontos+=10;
+		}
+		else if (decisao == 3){
+			printf("\n Voce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		printf("\n Pontuacao total:\n %d", pontos);
+			// amostrar pontuação;
+		
+		
+		
+		printf("\n 8 - Sou criado pela verdade, mas destruido por ela. Mantenho muitos vivos, mas mato outros lentamente. O que sou?\n");
+	 
+						printf("\n 1 - A Esperança\n");
+	 					printf("\n 2 - O Segredo\n");
+						printf("\n 3 - A Mentira \n");
+	 					printf("\nResposta:");
+						scanf("\n %d",&decisao);
+	
+
+		switch (decisao){
+			case 1:
+				printf("\n Nao, nao, nao, esta errado !\n");
+				break;
+				case 2:
+					printf("\n Voce acertou,boa !\n");
+					break;
+					case 3:
+						printf("\n Parabens vc esta...errado !\n");
+						break;
+	}
+	// adicionar pontos
+		if (decisao == 1){
+				printf("\n Voce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		else if (decisao == 2){
+			
+			printf("\n Voce ganhou: 10 pontos\n");
+		pontos+=10;
+		}
+		else if (decisao == 3){
+			printf("\n Voce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		printf("\n Pontuacao total:\n %d", pontos);
+			// amostrar pontuação;
+		
+		
+		printf("\n 9 - Para alguns sou prisao, para outros sou abrigo.");
+		printf(" Para uns sou passado, para outros, maldiçao.");
+		printf(" Todos carregam a minha chave. O que sou?\n");
+	 
+						printf("\n 1 - A Consciencia\n");
+	 					printf("\n 2 - A Mente\n");
+						printf("\n 3 - O Passado \n");
+	 					printf("\nResposta:");
+						scanf("\n %d",&decisao);
+	
+
+		switch (decisao){
+			case 1:
+				printf("\n Nao, nao, nao !\n");
+				break;
+				case 2:
+					printf("\n Esta errado !\n");
+					break;
+					case 3:
+						printf("\n Voce acertou, boa !\n");
+						break;
+	}
+	// adicionar pontos
+		if (decisao == 1){
+				printf("\n Voce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		else if (decisao == 2){
+			
+		printf("\n Voce perdeu: 5 pontos\n");
+				pontos-=5;
+		}
+		else if (decisao == 3){
+			printf("\n Voce ganhou: 10 pontos\n");
+		pontos+=10;
+		}
+		printf("\n Pontuacao total:\n %d", pontos);
+			// amostrar pontuação;
+	
+
+
+
+	// ================= MISSAO DE BATALHA ================= //
+
+
+    int vidaJogador = 40;
+    int vidaCapangas = 35;
+    int ataque;
+
+    printf("\n=====================================\n");
+    printf(" MISSAO EXTRA: CAPANGAS DO CORINGA\n");
+    printf("=====================================\n");
+
+    while (vidaJogador > 0 && vidaCapangas > 0) {
+
+        printf("\nSua vida: %d", vidaJogador);
+        printf("\nVida dos capangas: %d\n", vidaCapangas);
+
+        printf("\nEscolha seu ataque:");
+        printf("\n1 - Soco");
+        printf("\n2 - Chute");
+        printf("\nOpcao: ");
+        scanf("%d", &ataque);
+
+        if (ataque == 1) {
+            printf("\nVoce acertou um soco!\n");
+            vidaCapangas -= 5;
+        } 
+        else if (ataque == 2) {
+            if (pontos >= 30) {
+                printf("\nChute critico!\n");
+                vidaCapangas -= 10;
+            } else {
+                printf("\nChute falhou!\n");
+            }
+        } 
+        else {
+            printf("\nOpcao invalida! Perdeu o turno.\n");
+        }
+
+        if (vidaCapangas > 0) {
+            printf("\nOs capangas atacam!\n");
+            vidaJogador -= 5;
+        }
+    }
+
+    if (vidaJogador <= 0) {
+        printf("\nVOCE FOI DERROTADO!\n");
+    } else {
+        printf("\nVOCE DERROTOU OS CAPANGAS!\n");
+        pontos += 20;
+        printf("Recompensa: +20 pontos\n");
+    }
+
+    printf("\nPontuacao final: %d\n", pontos);
+    
+    /* ================= CHEFAO FINAL: O CORINGA ================= */
+
+int LifedoHeroi = 60;
+int vidaCoringa = 100;
+int combate;
+int fase = 1;
+int especialUsado = 0;
+int defendendo = 0;
+
+printf("\n=====================================\n");
+printf("        CHEFAO FINAL: O CORINGA\n");
+printf("            HAHAHAHAHA!\n");
+printf("=====================================\n");
+printf("O Coringa surge batendo palmas...\n");
+
+while (LifedoHeroi > 0 && vidaCoringa > 0) {
+
+    /* CONTROLE DE FASES */
+    if (vidaCoringa <= 70 && vidaCoringa > 35) fase = 2;
+    if (vidaCoringa <= 35) fase = 3;
+
+    printf("\n----- FASE %d -----\n", fase);
+    printf("Sua vida: %d\n", LifedoHeroi);
+    printf("Vida do Coringa: %d\n", vidaCoringa);
+
+    printf("\nEscolha sua acao:");
+    printf("\n1 - Soco");
+    printf("\n2 - Chute");
+    printf("\n3 - Golpe Especial (1 uso)");
+    printf("\n4 - Defender");
+    printf("\nOpcao: ");
+    scanf("%d", &combate);
+
+    defendendo = 0;
+
+    /* TURNO DO JOGADOR */
+    if (combate == 1) {
+        printf("\nVoce acerta um soco!\n");
+        vidaCoringa -= (pontos >= 50) ? 8 : 5;
+    }
+    else if (combate == 2) {
+        if (fase != 3) {
+            printf("\nChute certeiro!\n");
+            vidaCoringa -= 10;
+        } else {
+            printf("\nO Coringa desviou rindo!\n");
+        }
+    }
+    else if (combate == 3) {
+        if (!especialUsado) {
+            printf("\nGOLPE ESPECIAL! ATAQUE TOTAL!\n");
+            vidaCoringa -= 20;
+            especialUsado = 1;
+        } else {
+            printf("\nVoce ja usou o golpe especial!\n");
+        }
+    }
+    else if (combate == 4) {
+        printf("\nVoce se prepara para defender!\n");
+        defendendo = 1;
+    }
+    else {
+        printf("\nAcao invalida! Voce hesitou!\n");
+    }
+
+    /* TURNO DO CORINGA */
+    if (vidaCoringa > 0) {
+
+        int dano;
+
+        if (fase == 1) {
+            dano = 6;
+            printf("\nCoringa ataca com uma faca escondida!\n");
+        }
+        else if (fase == 2) {
+            dano = 10;
+            printf("\nCoringa usa GAS DO RISO!\n");
+        }
+        else {
+            dano = 15;
+            printf("\nCoringa ENTRA EM LOUCURA TOTAL!\n");
+        }
+
+        if (defendendo) {
+            dano /= 2;
+            printf("Voce reduziu o dano!\n");
+        }
+
+        LifedoHeroi -= dano;
+    }
+}
+
+/* FINAL DA BATALHA */
+printf("\n=====================================\n");
+
+if (LifedoHeroi <= 0) {
+    printf("HAHAHAHA!\n");
+    printf("O Coringa venceu...\n");
+    printf("Gotham caiu no caos.\n");
+}
+else {
+    printf("O Coringa cai no chao, rindo...\n");
+    printf("\"Voce venceu... mas a piada continua...\"\n");
+    printf("\nPARABENS! VOCE DERROTOU O CORINGA!\n");
+
+    pontos += 50;
+    printf("Recompensa final: +50 pontos\n");
+    printf("Pontuacao final: %d\n", pontos);
+}
+
+    return 0;
+}
