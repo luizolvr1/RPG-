@@ -1,8 +1,3 @@
-# RPG-
-RPG GOTHAM
-
-
-
 // gotham_game.c
 #include <stdio.h>
 #include <string.h>
@@ -72,7 +67,7 @@ void mostrarStatus(struct Heroi h, struct Vilao v){
     printf("---------------\n");
 }
 
-// função de luta genérica: inclui combos, itens, defender
+// função de luta: inclui combos, itens, defender
 void lutar(struct Heroi *h, struct Vilao *v){
     int opcao;
     int dano;
@@ -384,6 +379,6 @@ int main(){
         printf("Opcao invalida.\n");
     }
 
-    printf("\nJogo finalizado. Obrigado por jogar!\n");
+    printf("\nJogo finalizado. Obrigado!\n");
     return 0;
 }
