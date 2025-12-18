@@ -7,10 +7,6 @@
   #include <windows.h>
   void sleep_ms(int ms){ Sleep(ms); }
   void clear_screen(){ system("cls"); }
-#else
-  #include <unistd.h>
-  void sleep_ms(int ms){ usleep(ms * 1000); }
-  void clear_screen(){ printf("\033[2J\033[H"); }
 #endif
 
 // ====== STRUCTS
@@ -31,7 +27,7 @@ struct Vilao {
     int ataque;
 };
 
-// ====== PROTÓTIPOS ======
+// ====== PROTÓTIPOS 
 void animacao_pausa(const char *msg);
 void mostrarStatus(struct Heroi h, struct Vilao v);
 void lutar(struct Heroi *h, struct Vilao *v);
@@ -42,7 +38,7 @@ int tentarPergunta(const char *pergunta, const char *opcoes[], int correta, int 
 int venceu(int hp);
 void nivelUp(struct Heroi *h);
 
-// ====== IMPLEMENTAÇÕES ======
+// ====== IMPLEMENTAÇÕES 
 
 int venceu(int hp){
     return hp <= 0 ? 1 : 0;
@@ -262,7 +258,7 @@ void nivelUp(struct Heroi *h){
     }
 }
 
-// ====== MAIN ======
+// ====== MAIN 
 int main(){
     struct Heroi batman;
     strcpy(batman.nome, "Batman");
